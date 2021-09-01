@@ -1,4 +1,5 @@
 .cards {
+    // font-size: 62.5%;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -7,16 +8,39 @@
 }
 
 .card {
-    padding: 2rem 0.5rem 1rem;
-    max-width: 30rem;
+    padding: 3rem 1rem 2rem;
+    // max-width: 30rem;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    color: white;
 
     img {
-        width: 100%;
+        width: 40rem;
+        height: 25rem;
+
+        object-fit: cover;
     }
 
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        letter-spacing: 2px;
+    }
     p {
-        padding: 1rem;
+        font-size: 1.4rem;
+
+        padding: 1rem 1rem 2rem;
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(15rem);
+        transition: transform 0.3s;
+    }
+
+    &:hover p {
+        transform: translateY(0rem);
     }
 }
