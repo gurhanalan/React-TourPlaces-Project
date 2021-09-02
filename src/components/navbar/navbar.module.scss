@@ -1,0 +1,22 @@
+.navbar {
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #ace0f9;
+            color: black;
+        }
+    }
+}

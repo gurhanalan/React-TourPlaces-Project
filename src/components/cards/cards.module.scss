@@ -1,5 +1,5 @@
 .cards {
-    // font-size: 62.5%;
+    padding: 5rem 0 3rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -36,7 +36,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        transform: translateY(15rem);
+        transform: translateY(20rem);
         transition: transform 0.3s;
     }
 
